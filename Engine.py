@@ -210,8 +210,45 @@
 # name = input("Enter your name : ")
 # print(hi(name))
 
-def add(a,b):
-    return a+b
-a = int(input("enter val of a : "))
-b = int(input("enter val of b : "))
-print("sum = ",add(a,b))
+# def add(a,b):
+#     return a+b
+# a = int(input("enter val of a : "))
+# b = int(input("enter val of b : "))
+# print("sum = ",add(a,b))
+
+
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+
+
+n = int(input(" Enter a number to check:"))
+if n % 2 == 0:
+  print("It's an even number.")
+if n % 2 != 0:
+  print("It's an odd number.")
+if n == 0:
+  print("The number is neither even nor odd. Rather you entered Zero.")
+
+number = int(input("Enter the number?  "))  
+
+if number==30:  
+    print("The number you entered is: 30 ")  
+elif number==40:  
+    print("The number you entered is: 40") 
+elif number==50:  
+    print("The number you entered is: 50")
+else:  
+    print(" You have entered a random number other than 30, 40 and 50.") 
+
+
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
+
