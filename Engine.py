@@ -14,3 +14,6 @@ print(text.find('e'))
 print(text.count('a'))
 print(text.replace('a','@'))
 print(len(text))
+
+x = int(input("Enter number within range 10 : "))
+print(x>=3 and x<=10)
