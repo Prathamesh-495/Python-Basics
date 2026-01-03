@@ -217,38 +217,89 @@
 # print("sum = ",add(a,b))
 
 
-a = 33
-b = 200
-if b > a:
-  print("b is greater than a")
+# a = 33
+# b = 200
+# if b > a:
+#   print("b is greater than a")
 
 
-n = int(input(" Enter a number to check:"))
-if n % 2 == 0:
-  print("It's an even number.")
-if n % 2 != 0:
-  print("It's an odd number.")
-if n == 0:
-  print("The number is neither even nor odd. Rather you entered Zero.")
+# n = int(input(" Enter a number to check:"))
+# if n % 2 == 0:
+#   print("It's an even number.")
+# if n % 2 != 0:
+#   print("It's an odd number.")
+# if n == 0:
+#   print("The number is neither even nor odd. Rather you entered Zero.")
 
-number = int(input("Enter the number?  "))  
+# number = int(input("Enter the number?  "))  
 
-if number==30:  
-    print("The number you entered is: 30 ")  
-elif number==40:  
-    print("The number you entered is: 40") 
-elif number==50:  
-    print("The number you entered is: 50")
-else:  
-    print(" You have entered a random number other than 30, 40 and 50.") 
+# if number==30:  
+#     print("The number you entered is: 30 ")  
+# elif number==40:  
+#     print("The number you entered is: 40") 
+# elif number==50:  
+#     print("The number you entered is: 50")
+# else:  
+#     print(" You have entered a random number other than 30, 40 and 50.") 
 
 
-x = 41
+# x = 41
 
-if x > 10:
-  print("Above ten,")
-  if x > 20:
-    print("and also above 20!")
-  else:
-    print("but not above 20.")
+# if x > 10:
+#   print("Above ten,")
+#   if x > 20:
+#     print("and also above 20!")
+#   else:
+#     print("but not above 20.")
 
+
+courses = ['ba','bcom','bsc','be']
+for i in courses:
+    print(i)
+
+fruits = ('apple','mango','banana')
+for fruit in fruits:
+    print(fruit)
+
+company = {'name':'google','location':'usa','type':'search engine'}
+for key in company:
+    print(key,company[key])
+
+for id,item in enumerate(courses):
+    print(id,item)
+
+courses = ['ba', 'bcom', 'bsc', 'be']
+for item in courses:
+  print(item)
+  if item == 'bsc':                 # we wan't to break the loop when 'bsc' is reached
+    break
+  
+courses = ['ba', 'bcom', 'bsc', 'be']
+for course in courses:
+  if course == 'bsc':
+    continue
+  print(course)
+
+nums = [11,23,30,43]  
+count = 0;  
+for item in nums:  
+    count = count + 1
+print("Total length - ",count)
+
+
+rows = int(input("Enter the rows  :"))    
+for i in range(0, rows+1):               
+    for j in range(i):                    
+        print("*", end='')               
+    print()    
+
+
+for i in range(5): # outer loop
+    for j in range(10, 20): # inner loop
+        print(i, j)
+
+num = [10,30,23,43,65,12]  
+sum = 0  
+for i in num:  
+    sum = sum + i     
+print("The sum is:",sum) 
