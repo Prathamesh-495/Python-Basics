@@ -253,53 +253,75 @@
 #     print("but not above 20.")
 
 
-courses = ['ba','bcom','bsc','be']
-for i in courses:
-    print(i)
+# courses = ['ba','bcom','bsc','be']
+# for i in courses:
+#     print(i)
 
-fruits = ('apple','mango','banana')
-for fruit in fruits:
-    print(fruit)
+# fruits = ('apple','mango','banana')
+# for fruit in fruits:
+#     print(fruit)
 
-company = {'name':'google','location':'usa','type':'search engine'}
-for key in company:
-    print(key,company[key])
+# company = {'name':'google','location':'usa','type':'search engine'}
+# for key in company:
+#     print(key,company[key])
 
-for id,item in enumerate(courses):
-    print(id,item)
+# for id,item in enumerate(courses):
+#     print(id,item)
 
-courses = ['ba', 'bcom', 'bsc', 'be']
-for item in courses:
-  print(item)
-  if item == 'bsc':                 # we wan't to break the loop when 'bsc' is reached
-    break
+# courses = ['ba', 'bcom', 'bsc', 'be']
+# for item in courses:
+#   print(item)
+#   if item == 'bsc':                 # we wan't to break the loop when 'bsc' is reached
+#     break
   
-courses = ['ba', 'bcom', 'bsc', 'be']
-for course in courses:
-  if course == 'bsc':
-    continue
-  print(course)
+# courses = ['ba', 'bcom', 'bsc', 'be']
+# for course in courses:
+#   if course == 'bsc':
+#     continue
+#   print(course)
 
-nums = [11,23,30,43]  
-count = 0;  
-for item in nums:  
-    count = count + 1
-print("Total length - ",count)
-
-
-rows = int(input("Enter the rows  :"))    
-for i in range(0, rows+1):               
-    for j in range(i):                    
-        print("*", end='')               
-    print()    
+# nums = [11,23,30,43]  
+# count = 0;  
+# for item in nums:  
+#     count = count + 1
+# print("Total length - ",count)
 
 
-for i in range(5): # outer loop
-    for j in range(10, 20): # inner loop
-        print(i, j)
+# rows = int(input("Enter the rows  :"))    
+# for i in range(0, rows+1):               
+#     for j in range(i):                    
+#         print("*", end='')               
+#     print()    
 
-num = [10,30,23,43,65,12]  
-sum = 0  
-for i in num:  
-    sum = sum + i     
-print("The sum is:",sum) 
+
+# for i in range(5): # outer loop
+#     for j in range(10, 20): # inner loop
+#         print(i, j)
+
+# num = [10,30,23,43,65,12]  
+# sum = 0  
+# for i in num:  
+#     sum = sum + i     
+# print("The sum is:",sum) 
+
+
+x = 1
+while x < 5:
+    print(x)       
+    x += 1
+
+while True:
+    name = input('Input name: ')
+    if name == 'pande':
+        break
+    print("Your name is:", name)
+
+i = 0  
+str1 = 'Beautiful'  
+  
+while i < len(str1):   
+    if str1[i] == 't':   
+        i += 1  
+        break  
+    print('Current Letter :', str1[i])   
+    i += 1 
