@@ -192,3 +192,26 @@
 # nums = [1,2,2,3,3,3]
 # unique_nums = set(nums)
 # letters = set("banana")
+
+
+
+# def greet(name):
+#     print(f'hello,good morning,{name}')
+# greet('prathamesh')
+# greet(11)
+
+# def hello(name):
+#     return (f'hello, {name}')
+# print(hello('prathamesh'))
+
+# def hi(name):
+#     message = 'HI '+name
+#     return message
+# name = input("Enter your name : ")
+# print(hi(name))
+
+def add(a,b):
+    return a+b
+a = int(input("enter val of a : "))
+b = int(input("enter val of b : "))
+print("sum = ",add(a,b))
