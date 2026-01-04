@@ -327,54 +327,72 @@
 #     i += 1 
 
 
-class Employee:            
-    name = "John"          
-    age = 26
+# class Employee:            
+#     name = "John"          
+#     age = 26
 
-emp = Employee()           
-type(emp)
-print(emp.name)    
-print(emp.age)
+# emp = Employee()           
+# type(emp)
+# print(emp.name)    
+# print(emp.age)
 
 
-class Employee:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Employee:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
     
-    def details(self):
-        print("Employee Name: ",  self.name)
-        print("Employee Age: ", self.age)
+#     def details(self):
+#         print("Employee Name: ",  self.name)
+#         print("Employee Age: ", self.age)
  
 
-emp1 = Employee("John", 26)         
-emp2 = Employee("Jane", 24)         
+# emp1 = Employee("John", 26)         
+# emp2 = Employee("Jane", 24)         
 
-emp1.details()
-emp2.details()
-
-
-class Rectangle:
-    def __init__(self, length, width ):
-        self.length = length
-        self.width = width
-    def area(self):
-        print(f"Length - {self.length}, Width - {self.width}")
-        return self.length * self.width
-
-first = Rectangle(5,2)
-print(first.area())
+# emp1.details()
+# emp2.details()
 
 
-class Dog:
-  def __init__(self, breed, age, color):
-    self.breed = breed
-    self.age = age
-    self.color = color
-  def details(self):
-    print(f"Breed - {self.breed}, Age - {self.age}, Color - {self.age} ")
+# class Rectangle:
+#     def __init__(self, length, width ):
+#         self.length = length
+#         self.width = width
+#     def area(self):
+#         print(f"Length - {self.length}, Width - {self.width}")
+#         return self.length * self.width
 
-dog1 = Dog('Husky', 5, 'Blank')
+# first = Rectangle(5,2)
+# print(first.area())
 
-dog1.details()
+
+# class Dog:
+#   def __init__(self, breed, age, color):
+#     self.breed = breed
+#     self.age = age
+#     self.color = color
+#   def details(self):
+#     print(f"Breed - {self.breed}, Age - {self.age}, Color - {self.age} ")
+
+# dog1 = Dog('Husky', 5, 'Blank')
+
+# dog1.details()
+
+
+
+import math
+math.sqrt(4)
+
+# But if you import sqrt() specifically, then you can access it just like that. 
+from math import sqrt       
+sqrt(4) 
+
+math.log10(100)
+
+from datetime import date, datetime
+print(date.today())
+today = date.today()
+print(today)
+print(today.day, today.month, today.year) 
+print(datetime.now().strftime("%Y-%m-%d %H:%M:%S")) 
